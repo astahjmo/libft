@@ -1,23 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 02:17:23 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/13 03:30:14 by johmatos         ###   ########.fr       */
+/*   Created: 2022/04/13 03:40:17 by johmatos          #+#    #+#             */
+/*   Updated: 2022/04/15 19:43:20 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_size	ft_strlen(const char *str)
+t_size	ft_strlcat(char *dst, const char *src, t_size size)
 {
-	t_usize	count;
+	t_size	n;
+	char	*d_index;
 
-	count = 0;
-	while (str[count])
-		count++;
-	return (count);
+	d_index = dst;
+	n = size;
+	while (*(++d_index))
+		n--;
+	n = size - (ft_strlen(dst));
+	if (n == 0)
+		return ((ft_strlen(dst)) + ft_strlen(src));
+	while (*src)
+	{
+		if (n != 1)
+		{
+			*d_index = *src;
+			n--;
+		}
+		d_index++;
+		src++;
+	}
+	*d_index = '\0';
+	return (ft_strlen(dst) + ft_strlen(src));
 }
