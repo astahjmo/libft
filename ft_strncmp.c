@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 02:02:47 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/26 01:41:24 by johmatos         ###   ########.fr       */
+/*   Created: 2022/04/26 00:24:50 by johmatos          #+#    #+#             */
+/*   Updated: 2022/04/26 01:26:08 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_size	ft_isdigit(int c)
+int	ft_strncmp(const char *s1, const char *s2, t_size n)
 {
-	return ('0' <= c && c <= '9');
+	while ((n-- > 0) && (*s1 || *s2))
+	{
+		if (*s1 != *s2)
+			break;
+		s1++;
+		s2++;
+	}
+	return (s1 - s2);
 }

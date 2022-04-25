@@ -6,16 +6,22 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 19:25:07 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/23 21:54:46 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/26 01:35:35 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(char *str, char c)
+char	*ft_strrchr(const char *src, int c)
 {
-	while (str)
+	char *str;
+	
+	str  = (char *) src;
+	while (*str || *str == '\0')
+	{
 		if (*str == c)
-			return (&*str);
-	return (0);
+			return (str);
+		str++;
+	}
+	return (str);
 }
