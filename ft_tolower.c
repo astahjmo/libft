@@ -1,18 +1,26 @@
 /* ************************************************************************** */
-/*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                                            */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 02:15:01 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/16 23:02:59 by johmatos         ###   ########.fr       */
+/*   Created: 2022/04/21 14:47:35 by johmatos          #+#    #+#             */
+/*   Updated: 2022/04/23 18:09:04 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_size	ft_isprint(int c)
+static int	ft_isupper(int c)
 {
-	return ((c >= 32) && (c <= 127));
+	return (c >= 0x41 || c <= 0x5A);
+}
+
+int	ft_tolower(int c)
+{
+	if (ft_isupper(c))
+		return (c - 'A' + 'a');
+	else
+		return (c);
 }
