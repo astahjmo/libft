@@ -1,27 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 03:20:41 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/27 12:01:46 by johmatos         ###   ########.fr       */
+/*   Created: 2022/05/03 01:42:07 by johmatos          #+#    #+#             */
+/*   Updated: 2022/05/03 02:01:41 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, t_size n)
-{
-	t_size			count;
-	t_uchar			*d;
-	const t_uchar	*s;
-
-	d = dest;
-	s = (const unsigned char *) src;
-	count = -1;
-	while (++count < n)
-		d[count] = s[count];
-	return (dest);
-}
+char *ft_strnstr(const char *heystack, const char *needle,  )

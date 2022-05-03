@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 14:47:35 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/23 18:09:04 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/27 17:19:49 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 static int	ft_isupper(int c)
 {
-	return (c >= 0x41 || c <= 0x5A);
+	return (c >= 'A' && c <= 'Z');
 }
 
 int	ft_tolower(int c)
 {
+	c = (unsigned int ) c;
 	if (ft_isupper(c))
-		return (c - 'A' + 'a');
+		return (c | 32);
 	else
 		return (c);
 }

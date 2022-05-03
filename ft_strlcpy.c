@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 03:20:33 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/15 18:54:53 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/27 17:31:48 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_size	ft_strlcpy(char *dst, const char *src, t_size size)
 	strlen = ft_strlen(src);
 	if ((strlen + 1) < size)
 		ft_memcpy(dst, src, strlen + 1);
-	else if (!(size))
+	else if (size != 0)
 	{
 		ft_memcpy(dst, src, size - 1);
 		dst[size - 1] = '\0';

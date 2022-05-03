@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 02:32:41 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/06 18:59:23 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/04/27 01:20:56 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ void	*ft_memset(void *dest, int val, t_usize len)
 
 	ptr = dest;
 	count = 0;
-	while (count++ <= len)
+	while (count < len)
+	{
 		ptr[count] = val;
+		count++;
+	}
 	return (dest);
 }

@@ -5,21 +5,34 @@
 #                                                     +:+ +:+         +:+      #
 #    By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/04/21 14:49:16 by johmatos          #+#    #+#              #
-#    Updated: 2022/04/26 01:40:19 by johmatos         ###   ########.fr        #
+#    Created: 2022/04/29 17:39:40 by johmatos          #+#    #+#              #
+#    Updated: 2022/04/29 17:39:43 by johmatos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#						Source
-# ---------------------------------------------------------->
+NAME			= libft.a
 CC				= gcc
 CFLAGS			= -Wall -Werror -Wextra
-INCLS			= ./src
+INCLS			= libft.h
 DIR 			= ./
-SRC				:= $(shell find $(DIR) -name 'ft_*.c')
-OBJS			:= $(addprefix $(DIR)/,$(SRC):%.c=%.o)
+SRC				= $(shell find $(DIR) -name 'ft_*.c')
+OBJS			= $(SRC:$.c=o)
 MAIN			= main.c
 
+all:	$(NAME)
 
-install: 	$(SRC)
-		$(CC) $(CFLAGS) -I $(INCLS) $(MAIN) $(SRC)
+$(NAME):	$(OBJS)
+	ar -rsc $(NAME) $(OBJS)
+$(OBJS):	$(SRC) $(HEADER)
+	$(CC) $(CFLAGS) -c $(SRC)
+
+clean: $(OBJS)
+	rm -rf $(OBJS)
+
+fclean: 
+	rm -rf $(NAME) $(OBJS)
+
+re: fclean all
+
+
+.PHONY: all clean
