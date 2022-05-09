@@ -1,0 +1,585 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Mon May  9 21:11:32 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /home/coder/.vscode-server
+# makefile (from 'Makefile', line 18)
+SRC = $(shell find $(DIR) -name 'ft_*.c')
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/coder/libft
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/node
+# makefile (from 'Makefile', line 15)
+CFLAGS = -Wall -Werror -Wextra
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 19)
+OBJS = $(SRC:$.c=o)
+# environment
+VSCODE_CWD = /home/coder
+# environment
+SSH_CONNECTION = 10.51.4.20 55047 192.168.88.235 2222
+# environment
+PATH = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# makefile (from 'Makefile', line 16)
+INCLS = libft.h
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-d0c25b71-a680-4282-828c-afbaa519a3d9.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 17)
+DIR = ./
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/coder/libft
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/coder
+# environment
+LOGNAME = coder
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 14)
+CC = gcc
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = coder
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 13)
+NAME = libft.a
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 10.51.4.20 55047 2222
+# makefile (from 'Makefile', line 20)
+MAIN = main.c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+MOTD_SHOWN = pam
+# variable set hash-table stats:
+# Load=70/1024=7%, Rehash=0, Collisions=11/137=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 131, inode 262828060): 29 files, no impossibilities.
+
+# 29 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+ft_strncmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.718023298
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_isalnum.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-25 22:41:49.003551175
+#  File has been updated.
+#  Successfully updated.
+
+ft_memcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_memcmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_strlen.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_memmove.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-25 22:41:49.011551482
+#  File has been updated.
+#  Successfully updated.
+
+ft_isdigit.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_strchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.714023141
+#  File has been updated.
+#  Successfully updated.
+
+all: libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+
+ft_memchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_toupper.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.72602361
+#  File has been updated.
+#  Successfully updated.
+
+ft_memset.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_strnstr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 21:26:52.698857089
+#  File has been updated.
+#  Successfully updated.
+
+ft_tolower.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_strrchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_isascii.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.706022829
+ 
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 17:51:33.149536983
+#  File has been updated.
+#  Successfully updated.
+
+ft_isprint.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+libft.a: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+#  recipe to execute (from 'Makefile', line 25):
+	ar -rsc $(NAME) $(OBJS)
+
+ft_bzero.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_memcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.710022986
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_memcmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.710022986
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strlen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-25 22:41:49.015551634
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isdigit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-26 01:41:24.622322075
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_memchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.710022986
+#  File has been updated.
+#  Successfully updated.
+
+fclean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	rm -rf $(NAME) $(OBJS)
+
+# Not a target:
+ft_memset.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 21:22:40.753109429
+#  File has been updated.
+#  Successfully updated.
+
+ft_calloc.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_tolower.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.722023454
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_strrchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 21:27:50.897118156
+#  File has been updated.
+#  Successfully updated.
+
+ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strlcat.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-09 21:11:30.664733224
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_bzero.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 17:54:15.787675327
+#  File has been updated.
+#  Successfully updated.
+
+ft_strlcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_isprint.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.706022829
+#  File has been updated.
+#  Successfully updated.
+
+# 'override' directive
+ft_strncmp.o: .SHELLSTATUS := 0
+ft_strncmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ft_strncmp.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# automatic
+# | := 
+# automatic
+# < := ft_strncmp.c
+# automatic
+# ^ := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# automatic
+# ? := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=5/19=26%
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isalpha.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-25 22:41:49.003551175
+#  File has been updated.
+#  Successfully updated.
+
+ft_isalnum.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_memmove.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_strchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_toupper.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_atoi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 17:51:36.069646767
+#  File has been updated.
+#  Successfully updated.
+
+ft_strnstr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_atoi.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+# Not a target:
+ft_calloc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-06 20:34:14.892470468
+#  File has been updated.
+#  Successfully updated.
+
+ft_isascii.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+clean: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+ 
+	rm -rf $(OBJS)
+
+# Not a target:
+ft_strlcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-03 15:46:31.718023298
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=53/1024=5%, Rehash=0, Collisions=16/159=10%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 61 / storage = 680 B / avg = 11 B
+# current buf: size = 8162 B / used = 680 B / count = 61 / avg = 11 B
+
+# strcache performance: lookups = 166 / hit rate = 63%
+# hash-table stats:
+# Load=61/8192=1%, Rehash=0, Collisions=7/166=4%
+# Finished Make data base on Mon May  9 21:11:32 2022
+
+ 
