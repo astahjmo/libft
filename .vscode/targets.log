@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon May  9 21:11:32 2022
+# Make data base, printed on Tue May 10 04:27:37 2022
 
 # Variables
 
@@ -50,7 +50,7 @@ OBJS = $(SRC:$.c=o)
 # environment
 VSCODE_CWD = /home/coder
 # environment
-SSH_CONNECTION = 10.51.4.20 55047 192.168.88.235 2222
+SSH_CONNECTION = 192.168.78.0 59602 192.168.88.44 2222
 # environment
 PATH = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 16)
@@ -58,7 +58,7 @@ INCLS = libft.h
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-d0c25b71-a680-4282-828c-afbaa519a3d9.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4924d0c4-085f-47d3-b08d-561b400ade8b.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 17)
@@ -118,7 +118,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.51.4.20 55047 2222
+SSH_CLIENT = 192.168.78.0 59602 2222
 # makefile (from 'Makefile', line 20)
 MAIN = main.c
 # automatic
@@ -288,8 +288,8 @@ ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_isascii.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-03 15:46:31.706022829
  
+#  Last modified 2022-05-03 15:46:31.706022829
 #  File has been updated.
 #  Successfully updated.
 
@@ -421,7 +421,7 @@ ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_strlcat.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-09 21:11:30.664733224
+#  Last modified 2022-05-09 22:54:26.965372622
 #  File has been updated.
 #  Successfully updated.
 
@@ -556,7 +556,6 @@ clean: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 30):
- 
 	rm -rf $(OBJS)
 
 # Not a target:
@@ -575,11 +574,12 @@ ft_strlcpy.c:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 61 / storage = 680 B / avg = 11 B
+ 
 # current buf: size = 8162 B / used = 680 B / count = 61 / avg = 11 B
 
 # strcache performance: lookups = 166 / hit rate = 63%
 # hash-table stats:
 # Load=61/8192=1%, Rehash=0, Collisions=7/166=4%
-# Finished Make data base on Mon May  9 21:11:32 2022
+# Finished Make data base on Tue May 10 04:27:37 2022
 
  
