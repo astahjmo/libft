@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 03:02:41 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/18 06:21:27 by coder            ###   ########.fr       */
+/*   Created: 2022/05/18 06:22:01 by coder             #+#    #+#             */
+/*   Updated: 2022/05/18 06:49:12 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_size	ft_strlcat(char *dst, const char *src, t_size size)
+char	*ft_strdup(char *src)
 {
-	t_size	dstt;
-	t_size	srcc;
+	int		len;
+	char	*new;
 
-	dstt = 0;
-	srcc = 0;
-	while (dst[dstt] && dstt < size)
-		dstt++;
-	while (src[srcc] && (dstt + srcc + 1) < size)
-	{
-		dst[dstt + srcc] = src[srcc];
-		srcc++;
-	}
-	if (dstt != size)
-		dst[dstt + srcc] = 0;
-	return (dstt + ft_strlen(src));
+	len = ft_strlen(src);
+	new = (char *) malloc(len * sizeof(char));
+	if (new == NULL)
+		return (NULL);
+	ft_memcpy(new, src, len);
+	return (new);
 }

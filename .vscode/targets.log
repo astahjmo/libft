@@ -5,11 +5,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Tue May 10 04:27:37 2022
+# Make data base, printed on Wed May 18 06:09:20 2022
 
 # Variables
+ 
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
@@ -50,7 +50,7 @@ OBJS = $(SRC:$.c=o)
 # environment
 VSCODE_CWD = /home/coder
 # environment
-SSH_CONNECTION = 192.168.78.0 59602 192.168.88.44 2222
+SSH_CONNECTION = 10.51.4.22 12424 192.168.127.21 2222
 # environment
 PATH = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 16)
@@ -58,7 +58,7 @@ INCLS = libft.h
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4924d0c4-085f-47d3-b08d-561b400ade8b.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e77b0620-1c49-4e5c-932e-a4c29119a1c1.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 17)
@@ -118,7 +118,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 192.168.78.0 59602 2222
+SSH_CLIENT = 10.51.4.22 12424 2222
 # makefile (from 'Makefile', line 20)
 MAIN = main.c
 # automatic
@@ -160,7 +160,7 @@ MOTD_SHOWN = pam
 
 # Directories
 
-# . (device 131, inode 262828060): 29 files, no impossibilities.
+# . (device 116, inode 262828060): 29 files, no impossibilities.
 
 # 29 files, no impossibilities in 1 directories.
 
@@ -288,7 +288,6 @@ ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_isascii.c:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-05-03 15:46:31.706022829
 #  File has been updated.
 #  Successfully updated.
@@ -300,6 +299,7 @@ ft_isascii.c:
 #  File has not been updated.
 
 # Not a target:
+ 
 Makefile:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-06 17:51:33.149536983
@@ -421,7 +421,7 @@ ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_strlcat.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-09 22:54:26.965372622
+#  Last modified 2022-05-18 06:07:38.748245188
 #  File has been updated.
 #  Successfully updated.
 
@@ -574,12 +574,12 @@ ft_strlcpy.c:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 61 / storage = 680 B / avg = 11 B
- 
 # current buf: size = 8162 B / used = 680 B / count = 61 / avg = 11 B
 
 # strcache performance: lookups = 166 / hit rate = 63%
 # hash-table stats:
+ 
 # Load=61/8192=1%, Rehash=0, Collisions=7/166=4%
-# Finished Make data base on Tue May 10 04:27:37 2022
+# Finished Make data base on Wed May 18 06:09:20 2022
 
  
