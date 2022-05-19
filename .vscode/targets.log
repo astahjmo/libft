@@ -6,10 +6,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 18 06:09:20 2022
+# Make data base, printed on Thu May 19 03:21:52 2022
+ 
 
 # Variables
- 
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
@@ -50,7 +50,7 @@ OBJS = $(SRC:$.c=o)
 # environment
 VSCODE_CWD = /home/coder
 # environment
-SSH_CONNECTION = 10.51.4.22 12424 192.168.127.21 2222
+SSH_CONNECTION = 192.168.90.0 50930 192.168.127.25 2222
 # environment
 PATH = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # makefile (from 'Makefile', line 16)
@@ -58,7 +58,7 @@ INCLS = libft.h
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e77b0620-1c49-4e5c-932e-a4c29119a1c1.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-4417a877-242e-45f7-ac4a-e992b9495778.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 17)
@@ -118,7 +118,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 10.51.4.22 12424 2222
+SSH_CLIENT = 192.168.90.0 50930 2222
 # makefile (from 'Makefile', line 20)
 MAIN = main.c
 # automatic
@@ -160,9 +160,9 @@ MOTD_SHOWN = pam
 
 # Directories
 
-# . (device 116, inode 262828060): 29 files, no impossibilities.
+# . (device 116, inode 262828060): 30 files, no impossibilities.
 
-# 29 files, no impossibilities in 1 directories.
+# 30 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -184,21 +184,28 @@ ft_isalnum.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_memcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_memcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_memcmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# Not a target:
+ft_strdup.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-18 06:49:12.070103137
+#  File has been updated.
+#  Successfully updated.
+
+ft_memcmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_strlen.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strlen.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -212,7 +219,7 @@ ft_memmove.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_isdigit.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_isdigit.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -236,7 +243,7 @@ all: libft.a
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/10=0%
 
-ft_memchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_memchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -250,7 +257,7 @@ ft_toupper.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_memset.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_memset.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -264,21 +271,21 @@ ft_strnstr.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_tolower.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_tolower.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_strrchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strrchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -288,6 +295,7 @@ ft_strlcat.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_isascii.c:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-05-03 15:46:31.706022829
 #  File has been updated.
 #  Successfully updated.
@@ -299,21 +307,20 @@ ft_isascii.c:
 #  File has not been updated.
 
 # Not a target:
- 
 Makefile:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-06 17:51:33.149536983
 #  File has been updated.
 #  Successfully updated.
 
-ft_isprint.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_isprint.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-libft.a: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
+libft.a: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_strdup.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -323,7 +330,7 @@ libft.a: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memc
 #  recipe to execute (from 'Makefile', line 25):
 	ar -rsc $(NAME) $(OBJS)
 
-ft_bzero.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_bzero.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -384,7 +391,7 @@ ft_memset.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_calloc.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_calloc.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -405,7 +412,7 @@ ft_strrchr.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -421,7 +428,7 @@ ft_isalpha.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # Not a target:
 ft_strlcat.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-18 06:07:38.748245188
+#  Last modified 2022-05-18 06:21:27.904487523
 #  File has been updated.
 #  Successfully updated.
 
@@ -432,7 +439,7 @@ ft_bzero.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_strlcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strlcpy.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -448,7 +455,7 @@ ft_isprint.c:
 
 # 'override' directive
 ft_strncmp.o: .SHELLSTATUS := 0
-ft_strncmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strncmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -461,15 +468,15 @@ ft_strncmp.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft
 # automatic
 # * := 
 # automatic
-# + := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# + := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 # automatic
 # | := 
 # automatic
 # < := ft_strncmp.c
 # automatic
-# ^ := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# ^ := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 # automatic
-# ? := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+# ? := ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 # variable set hash-table stats:
 # Load=9/32=28%, Rehash=0, Collisions=5/19=26%
 #  recipe to execute (from 'Makefile', line 27):
@@ -487,28 +494,35 @@ ft_isalpha.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_isalnum.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_isalnum.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_memmove.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strdup.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_strchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_memmove.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_toupper.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strchr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c $(SRC)
+
+ft_toupper.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -522,14 +536,14 @@ ft_atoi.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_strnstr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_strnstr.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-ft_atoi.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_atoi.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -543,14 +557,14 @@ ft_calloc.c:
 #  File has been updated.
 #  Successfully updated.
 
-ft_isascii.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
+ft_isascii.o: ft_strncmp.c ft_memcmp.c ft_isalnum.c ft_isascii.c ft_strnstr.c ft_strdup.c ft_memcpy.c ft_calloc.c ft_isprint.c ft_strlen.c ft_isalpha.c ft_strlcat.c ft_memset.c ft_bzero.c ft_strlcpy.c ft_memchr.c ft_isdigit.c ft_strchr.c ft_memmove.c ft_toupper.c ft_strrchr.c ft_atoi.c ft_tolower.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c $(SRC)
 
-clean: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
+clean: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_strdup.o ft_memcpy.o ft_calloc.o ft_isprint.o ft_strlen.o ft_isalpha.o ft_strlcat.o ft_memset.o ft_bzero.o ft_strlcpy.o ft_memchr.o ft_isdigit.o ft_strchr.o ft_memmove.o ft_toupper.o ft_strrchr.o ft_atoi.o ft_tolower.o
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -561,25 +575,25 @@ clean: ft_strncmp.o ft_memcmp.o ft_isalnum.o ft_isascii.o ft_strnstr.o ft_memcpy
 # Not a target:
 ft_strlcpy.c:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-05-03 15:46:31.718023298
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=53/1024=5%, Rehash=0, Collisions=16/159=10%
+# Load=55/1024=5%, Rehash=0, Collisions=16/165=10%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 61 / storage = 680 B / avg = 11 B
-# current buf: size = 8162 B / used = 680 B / count = 61 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 63 / storage = 704 B / avg = 11 B
+# current buf: size = 8162 B / used = 704 B / count = 63 / avg = 11 B
 
-# strcache performance: lookups = 166 / hit rate = 63%
+# strcache performance: lookups = 172 / hit rate = 63%
 # hash-table stats:
- 
-# Load=61/8192=1%, Rehash=0, Collisions=7/166=4%
-# Finished Make data base on Wed May 18 06:09:20 2022
+# Load=63/8192=1%, Rehash=0, Collisions=7/172=4%
+# Finished Make data base on Thu May 19 03:21:52 2022
 
  

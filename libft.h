@@ -6,7 +6,7 @@
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 00:23:34 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/18 06:30:25 by coder            ###   ########.fr       */
+/*   Updated: 2022/05/19 03:58:37 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char		*ft_strrchr(const char *str, int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strnstr(const char *heystack, const char *needle, t_size size);
 char		*ft_strdup(char *src);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
+
 void		*ft_memchr(const void *s, int c, t_size n);
 void		ft_bzero(void *s, t_usize len);
 void		*ft_memset(void *s, int val, t_usize len);
