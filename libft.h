@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: johmatos < johmatos@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 00:23:34 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/21 13:58:04 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/23 02:44:59 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char		*ft_strrchr(const char *str, int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strnstr(const char *heystack, const char *needle, t_size size);
 char		*ft_strdup(char *src);
+char		**ft_split(char const *s, char c);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
