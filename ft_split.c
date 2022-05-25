@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 20:18:53 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/24 22:08:36 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/24 18:03:00 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,24 +31,26 @@ static int	ft_count(const char *s, char c)
 
 static void	ft_alloc(char **str, char *s, int word, char c)
 {
-	int		j;
-	int		index;
-	char	*end;
+	int	i;
+	int	j;
+	int	start;
+	int	end;
 
+	i = 0;
 	j = 0;
-	index = 0;
-	while (index < word)
+	while (i < word)
 	{
-		while (*s == c)
-			s++;
-		while (*s != c && *s)
+		while (s[j] == c)
+			j++;
+		start = j;
+		while (s[j] != c && s[j])
 		{
-			if ((s[j + 1]) == c || !(s[j + 1]))
-				end = &s[j];
+			if (s[j + 1] == c || s[j + 1] == '\0')
+				end = j;
 			j++;
 		}
-		str[index] = ft_substr(s, 0, (s - end));
-		index++;
+		str[i] = ft_substr(&s[start], 0, (end - start + 1));
+		i++;
 	}
 }
 
@@ -57,7 +59,7 @@ char	**ft_split(const char *s, char c)
 	int		word;
 	char	**str;
 
-	if (!s || !(*s))
+	if (!s && !(*s))
 		return (NULL);
 	word = ft_count(s, c);
 	str = malloc(sizeof(char *) * (word + 1));
@@ -66,10 +68,4 @@ char	**ft_split(const char *s, char c)
 	ft_alloc (str, (char *)s, word, c);
 	str[word] = NULL;
 	return (str);
-}
-
-int	main(void)
-{
-	ft_split("lorem ipsum dolor sit amet,\
-		consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
 }

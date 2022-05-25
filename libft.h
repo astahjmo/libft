@@ -6,7 +6,7 @@
 /*   By: johmatos < johmatos@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 00:23:34 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/23 02:44:59 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/24 22:25:14 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # define FALSE 0
 # include <stdlib.h>
 # include <malloc.h>
+# include <unistd.h>
+
 //types
 typedef unsigned int				t_usize;
 typedef unsigned char				t_uchar;
@@ -46,11 +48,19 @@ char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char		*ft_itoa(int n);
 
+void		ft_putchar_fd(char c, int fd);
 void		*ft_memchr(const void *s, int c, t_size n);
 void		ft_bzero(void *s, t_usize len);
 void		*ft_memset(void *s, int val, t_usize len);
 void		*ft_memcpy(void *dest, const void *src, t_size n);
 void		*ft_memmove(void *dest, const void *src, t_size n);
 void		*ft_calloc(t_size nmemb, size_t size);
+void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+void		ft_putstr_fd(char *s, int fd);
+void		ft_putendl_fd(char *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
+
 #endif
