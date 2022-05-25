@@ -6,13 +6,13 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 02:15:01 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/27 17:20:54 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/25 20:05:52 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_size	ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return ((c >= 32) && (c <= 126));
 }

@@ -1,6 +1,6 @@
-make ft_split.o --dry-run --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/coder/libft'
- 
-make: 'ft_split.o' is up to date.
 make: Leaving directory '/home/coder/libft'
  
+make: *** No targets.  Stop.
+
