@@ -6,13 +6,13 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 05:11:48 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/24 20:18:59 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/25 21:09:11 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	is_negative;
 	int	number;

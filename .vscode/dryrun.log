@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/coder/libft'
 cc -Wall -Werror -Wextra -c ft_atoi.c
 cc -Wall -Werror -Wextra -c ft_calloc.c

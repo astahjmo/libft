@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 20:19:09 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/25 20:24:48 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/25 21:46:49 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	*ft_calloc(size_t memory, size_t size)
 {
 	void	*ptr;
 
-	if (size == 0 || memory == 0)
+	if (size == 0 || memory == 0
+		|| (memory * size) / memory != size)
 		return (NULL);
 	ptr = malloc(memory * size);
 	if (ptr)
