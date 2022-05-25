@@ -6,12 +6,13 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 18:52:37 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/19 15:37:18 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/25 20:25:32 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, t_size n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*str;
 	unsigned int		uc;

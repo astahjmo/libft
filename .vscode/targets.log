@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 25 20:05:26 2022
+# Make data base, printed on Wed May 25 20:39:26 2022
 
 # Variables
 
@@ -21,7 +19,7 @@ make: *** No rule to make target 'all'.  Stop.
 # environment
 VSCODE_AGENT_FOLDER = /home/coder/.vscode-server
 # makefile (from 'Makefile', line 5)
-SRC = ft_atoi.c ft_calloc.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strdup.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+SRC := ft_atoi.c ft_calloc.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strdup.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -39,13 +37,15 @@ VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /home/coder/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/node
 # makefile (from 'Makefile', line 4)
-CFLAGS := -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 15)
+OBJS := ft_atoi.o ft_calloc.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
 # environment
 VSCODE_CWD = /home/coder
 # environment
@@ -91,15 +91,15 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 1
 # makefile (from 'Makefile', line 3)
-CC := cc
+CC = cc
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = coder
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
 # makefile (from 'Makefile', line 1)
-NAME := libft.a
+NAME = libft.a
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -127,7 +127,7 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 2)
-HEADER := libft.h
+HEADER = libft.h
 # automatic
 ^F = $(notdir $^)
 # default
@@ -145,7 +145,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 MOTD_SHOWN = pam
 # variable set hash-table stats:
-# Load=66/1024=6%, Rehash=0, Collisions=7/90=8%
+# Load=67/1024=7%, Rehash=0, Collisions=10/103=10%
 
 # Pattern-specific Variable Values
 
@@ -153,29 +153,187 @@ MOTD_SHOWN = pam
 
 # Directories
 
-# . (device 115, inode 262828060): 43 files, no impossibilities.
+# . (device 115, inode 262828060): 42 files, no impossibilities.
 
-# 43 files, no impossibilities in 1 directories.
+# 42 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+%.o: %.c libft.h
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) $(CFLAGS) -c $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
 
 # Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
+ft_strmapi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+ft_memcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_itoa.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memcmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isdigit.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: libft.a
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+ft_memchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_memset.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_tolower.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strrchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strjoin.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_split.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strlcat.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_atoi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-24 20:18:59.518120235
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-25 20:05:15.186073485
+#  Last modified 2022-05-25 20:39:09.913749013
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+ft_isprint.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libft.a: ft_atoi.o ft_calloc.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+ 
+#  recipe to execute (from 'Makefile', line 20):
+	ar -rsc $(NAME) $(OBJS)
+
+# Not a target:
+ft_striteri.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_bzero.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean fclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putnbr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	rm -rf $(NAME) $(OBJS)
+
+# Not a target:
+ft_calloc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_substr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isalpha.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -183,20 +341,145 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+ft_strlcpy.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strncmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: ft_atoi.o ft_calloc.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_striteri.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	rm -rf $(OBJS)
+
+# Not a target:
+ft_isalnum.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_isascii.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strdup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+libft.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-25 20:11:20.68035824
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ft_memmove.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_toupper.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_strnstr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putstr_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putchar_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ft_atoi.o: ft_atoi.c libft.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'ft_atoi'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ft_atoi.o
+# automatic
+# % := 
+# automatic
+# * := ft_atoi
+# automatic
+# + := ft_atoi.c libft.h
+# automatic
+# | := 
+# automatic
+# < := ft_atoi.c
+# automatic
+# ^ := ft_atoi.c libft.h
+# automatic
+# ? := ft_atoi.c libft.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) $(CFLAGS) -c $<
+
+# Not a target:
+ft_strtrim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ft_putendl_fd.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# Load=45/1024=4%, Rehash=0, Collisions=8/136=6%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 48 / storage = 560 B / avg = 11 B
-# current buf: size = 8162 B / used = 560 B / count = 48 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 89 / storage = 1033 B / avg = 11 B
+# current buf: size = 8162 B / used = 1033 B / count = 89 / avg = 11 B
 
-# strcache performance: lookups = 52 / hit rate = 7%
+# strcache performance: lookups = 145 / hit rate = 38%
 # hash-table stats:
-# Load=48/8192=1%, Rehash=0, Collisions=1/52=2%
-# Finished Make data base on Wed May 25 20:05:26 2022
+# Load=89/8192=1%, Rehash=0, Collisions=5/145=3%
+# Finished Make data base on Wed May 25 20:39:26 2022
 
  
