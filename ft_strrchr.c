@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/23 19:25:07 by johmatos          #+#    #+#             */
-/*   Updated: 2022/04/28 18:42:36 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/26 02:45:15 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *src, int c)
 	len = ft_strlen(src);
 	while (len >= 0)
 	{
-		if (src[len] == c)
+		if (src[len] == (char) c)
 			return ((char *) &src[len]);
 		len--;
 	}
