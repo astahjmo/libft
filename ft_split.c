@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 20:18:53 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/24 18:03:00 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/26 16:30:43 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,29 +29,32 @@ static int	ft_count(const char *s, char c)
 	return (words);
 }
 
-static void	ft_alloc(char **str, char *s, int word, char c)
+static char	**ft_alloc(char **split, char *s, int words, char c)
 {
-	int	i;
-	int	j;
-	int	start;
-	int	end;
+	int		start;
+	int		end;
+	int		index;
 
-	i = 0;
-	j = 0;
-	while (i < word)
+	start = 0;
+	index = 0;
+	while (index < words)
 	{
-		while (s[j] == c)
-			j++;
-		start = j;
-		while (s[j] != c && s[j])
+		while (s[start] == c)
+			start += 1;
+		end = start;
+		while (s[end] != c && s[end])
+			end += 1;
+		split[index] = (char *)ft_calloc((end - start) + 1, sizeof(char));
+		if (!split[index])
 		{
-			if (s[j + 1] == c || s[j + 1] == '\0')
-				end = j;
-			j++;
+			free(split);
+			return (NULL);
 		}
-		str[i] = ft_substr(&s[start], 0, (end - start + 1));
-		i++;
+		ft_strlcpy(split[index], s + start, (end - start) + 1);
+		start = end;
+		index++;
 	}
+	return (split);
 }
 
 char	**ft_split(const char *s, char c)
@@ -65,7 +68,9 @@ char	**ft_split(const char *s, char c)
 	str = malloc(sizeof(char *) * (word + 1));
 	if (!str)
 		return (NULL);
-	ft_alloc (str, (char *)s, word, c);
+	str = ft_alloc (str, (char *)s, word, c);
+	if (!str)
+		return (NULL);
 	str[word] = NULL;
 	return (str);
 }
