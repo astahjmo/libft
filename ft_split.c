@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: johmatos < johmatos@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 20:18:53 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/26 16:30:43 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/27 03:46:46 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_free(char **str)
+{
+	int	count;
+
+	count = 0;
+	while (str[count])
+	{
+		free (str[count]);
+		str[count++] = NULL;
+	}
+	free(str);
+}
 
 static int	ft_count(const char *s, char c)
 {
@@ -47,7 +60,7 @@ static char	**ft_alloc(char **split, char *s, int words, char c)
 		split[index] = (char *)ft_calloc((end - start) + 1, sizeof(char));
 		if (!split[index])
 		{
-			free(split);
+			ft_free(split);
 			return (NULL);
 		}
 		ft_strlcpy(split[index], s + start, (end - start) + 1);
