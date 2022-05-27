@@ -6,7 +6,7 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 21:55:50 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/26 16:11:44 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/27 12:26:32 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,5 @@ void	ft_putnbr_fd(int nb, int fd)
 		count--;
 	}
 	digit[count] = (char)(lnb % 10) + '0';
-	write(fd, &digit, 11);
+	ft_putstr_fd(digit, fd);
 }
