@@ -6,14 +6,12 @@
 /*   By: johmatos <johmatos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 00:23:34 by johmatos          #+#    #+#             */
-/*   Updated: 2022/05/26 16:07:45 by johmatos         ###   ########.fr       */
+/*   Updated: 2022/05/27 18:01:09 by johmatos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define TRUE 1
-# define FALSE 0
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -34,7 +32,7 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strrchr(const char *str, int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strnstr(const char *heystack, const char *needle, size_t size);
-char		*ft_strdup(char *src);
+char		*ft_strdup(const char *s);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
